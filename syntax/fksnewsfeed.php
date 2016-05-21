@@ -55,7 +55,7 @@ class syntax_plugin_fksnewsfeed_fksnewsfeed extends DokuWiki_Syntax_Plugin {
         return array($state,array($param));
     }
 
-    public function render($mode,Doku_Renderer &$renderer,$data) {
+    public function render($mode,Doku_Renderer $renderer,$data) {
         // $data is what the function handle return'ed.
         if($mode == 'xhtml'){
             /** @var Do ku_Renderer_xhtml $renderer */
